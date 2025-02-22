@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <meta name="keywords" content="Calculator">
+  <meta name="description" content="Simple Calculator">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="website icon" type="png" href="images/calculator.png">
+</head>
+<body>
+    <div class="calculator">
+        <input id="input" readonly placeholder="calculator" />
+        <div class="number">
+            <div class="button-container">
+                <button onclick="inputClear()" class="buttonAC">AC</button>
+                <button onclick="inputDelete()" class="button">Del</button>
+                <button onclick="toggleSign('+/-')" class="buttonP">+/-</button>
+                <button onclick="button('/')" class="buttonP">÷</button>
+            </div>
+            <div class="button-container">
+                <button onclick="button('7')">7</button>
+                <button onclick="button('8')">8</button>
+                <button onclick="button('9')">9</button>
+                <button onclick="button('+')" class="buttonP">+</button>
+            </div>
+            <div class="button-container">
+                <button onclick="button('4')">4</button>
+                <button onclick="button('5')">5</button>
+                <button onclick="button('6')">6</button>
+                <button onclick="button('*')" class="buttonP">x</button>
+            </div>
+            <div class="button-container">
+                <button onclick="button('1')">1</button>
+                <button onclick="button('2')">2</button>
+                <button onclick="button('3')">3</button>
+                <button onclick="button('-')" class="buttonP">-</button>
+            </div>
+            <div class="button-container">
+                <button onclick="button('00')">00</button>
+                <button onclick="button('0')">0</button>
+                <button onclick="button('.')">.</button>
+                <button onclick="calculate()" class="buttonCE">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
